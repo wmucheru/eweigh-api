@@ -1,0 +1,40 @@
+upstream php {
+    server unix:/var/run/php7.0-fpm.sock;
+}
+
+server {
+    listen 0.0.0.0:80;
+    autoindex on;
+
+    server_name app.eweighapp.com;
+    
+    root /var/www/html/eweigh/;
+    index index.php index.html index.htm index.nginx-debian.html;
+
+    location / {
+
+        try_files $uri $uri/ /index.php?/$request_uri;
+    }
+    
+    location ~ \.php$ {
+
+        include snippets/fastcgi-php.conf;
+        include fastcgi_params;
+
+        fastcgi_param  REQUEST_URI      $request_uri;
+        fastcgi_param  QUERY_STRING     $query_string;
+        fastcgi_param  REQUEST_METHOD   $request_method;
+        fastcgi_param  CONTENT_TYPE     $content_type;
+        fastcgi_param  CONTENT_LENGTH   $content_length;
+
+        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME /var/www/html/eweigh$fastcgi_script_name;
+    }
+}
+
+server {
+    listen 80;
+    server_name 172.31.46.239;
+
+    return 301 $scheme://app.eweighapp.com$request_uri;
+}

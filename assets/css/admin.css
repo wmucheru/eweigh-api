@@ -1,0 +1,46 @@
+.navbar{
+    background:#C80F0F;
+}
+
+.navbar-nav > li > a{
+    color:#fff!important;
+    font-size:0.9em!important;
+    font-weight:bold;
+    letter-spacing:0.2px;
+    margin:0;
+    text-transform:capitalize;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a,
+.farmers-bd .farmers-lnk,
+.cattle-bd .cattle-lnk{
+    background: #000!important;
+    transition:all 300ms ease-in;
+}
+
+#map{
+    background:transparent;
+    float:right;
+    height:40em;
+    width:100%;
+}
+
+#county-list{
+    padding-left:0;
+}
+#county-list li{
+    border-bottom:1px solid #ddd;
+    border-left:6px solid #ddd;
+    cursor:pointer;
+    list-style:none;
+    padding:5px 0 5px 10px;
+}
+#county-list li:hover, #county-list li.active{
+    background:#eee;
+    border-color:#C80F0F;
+}
+
+#county-list-holder{
+    height:74vh;
+    overflow:auto;
+}

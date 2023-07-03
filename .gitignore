@@ -1,0 +1,5 @@
+application/config/*.ini
+.zip
+.DS_Store
+
+content/uploads/*

@@ -1,0 +1,420 @@
+*{
+	border-radius:0;
+	box-sizing:border-box!important;
+	margin:0;
+    padding:0;
+}
+
+html, body{
+	height:100%;
+}
+
+body{
+    font-family: "Lato", Helvetica,Arial,sans-serif;
+    font-size:13px;
+	font-weight:400;
+    line-height:1.6em;
+}
+
+.site-bd{
+    background-image:url(../img/bg/static.jpg);
+    background-size:cover;
+}
+
+.admin-bd{
+    background:#eee;
+}
+
+a{
+	color:#165ba0;
+}
+p a {
+    border-bottom:1px dotted #165ba0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+.jumbotron .h1, .jumbotron h1{
+    font-family: "Lato", Helvetica,Arial,sans-serif;
+    color:#222;
+    font-weight:900;
+    /* text-transform:uppercase; */
+}
+
+ol, ul{
+    padding-left:1.5em;
+}
+
+.modal-content, .btn, .panel{
+    border-radius:2px;
+}
+
+.btn, .home-bg, .home-bd .navbar{
+    transition:all ease-in 500ms;
+}
+
+ul.infolist{
+	list-style:none;
+	margin-left:0.5em;
+	margin-bottom:2em;
+	margin-top:1em;
+}
+ul.infolist li{
+	margin-bottom:0.3em;
+}
+
+.breadcrumb>li{
+    margin-bottom:0;
+}
+
+.alert{
+    border-radius:0;
+    padding:0.5em 1em;
+}
+
+.form-control{
+	border-radius:0;
+	border:1px solid #ddd;
+	color:#333;
+}
+
+.control-label{
+    font-weight: normal;
+    font-size:0.9em;
+}
+.form-control{
+    box-shadow:none;
+    cursor: pointer;
+}
+.form-control:hover{
+    border-color:#aaa;
+}
+
+.btn{
+    border-radius:2px;
+}
+.btn > i{
+    margin-right:2px;
+}
+
+.btn-primary{
+    background:#305C8A;
+}
+.btn-secondary{
+    background:#F5F5F5;
+}
+.btn-success{
+    background:#58B957;
+}
+.btn-info{
+    background:#1BAAE2;
+}
+.btn-warning{
+    background:#F67C31;
+}
+.btn-danger{
+    background:#DB524B;
+}
+
+.label{
+    font-weight:normal;
+    letter-spacing:0.5px;
+}
+
+input[type=checkbox]{
+    cursor:pointer;
+}
+
+table tr th{
+    background:#ddd;
+}
+table tr th, table tr td{
+    font-size:12px;
+    padding:7px 8px 6px!important;
+}
+
+table tr td .btn{
+    font-size:11px;
+    padding:1px 5px 0px;
+}
+
+.action-bar{
+    margin-bottom:2em;
+}
+
+.btn-link{
+    border:1px solid #165ba0;
+    color:#165ba0;
+    display:inline-block;
+    margin-bottom:4px;
+    margin-right:10px;
+    padding:6px 10px 5px;
+    text-decoration:none!important;
+}
+.btn-link:hover, .btn-link:active,
+.btn-link:focus{
+    background:#165ba0;
+    color:#fff;
+}
+
+.trumbowyg-box,
+.trumbowyg-editor,
+.trumbowyg-textarea {
+    background: #fff;
+    margin-top: 0 !important;
+    min-height: 200px !important;
+}
+
+.modal-backdrop{
+    z-index: 1000;
+}
+.page-header{
+    border:0;
+	margin:0 0 1em;
+	padding:2em 0 0;
+}
+.page-header h1{
+	font-size:1.5em;
+	margin:0;
+}
+
+.top-action-bar{
+    padding:0.4em 0;
+}
+
+.container{
+	/* max-width:960px; */
+}
+
+.page-wrapper{
+    /* background:#fff; */
+}
+.page-content{
+    background:#fff;
+    box-shadow:0px 5px 8px rgba(0,0,0,0.3);
+    margin:1em 0;
+    padding:1em;
+}
+
+.accordion .panel-title, .accordion .panel-title a{
+	text-decoration:none;
+}
+
+.wrapper{
+	padding:0;
+    min-height:81%;
+}
+
+.navbar{
+    border:0;
+	border-radius:0;
+	box-shadow:none;
+    margin-bottom:0;
+    min-height:auto;
+    padding:0;
+}
+.navbar-brand{
+    height:35px;
+    margin-right:15px;
+    padding:0;
+    position: relative;
+}
+.navbar-brand img{
+    background:transparent;
+    height:3em;
+    padding:0 5px;
+}
+.navbar-custom{
+	z-index:999;
+}
+
+.navbar-custom .navbar-brand{
+	opacity:1.0;
+	padding-left:0;
+}
+.navbar-collapse{
+    padding:0;
+}
+
+.navbar-nav > li > a{
+    color:#672622!important;
+    text-transform:uppercase;
+    margin:2px;
+    padding:10px 15px 9px;
+}
+
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:hover{
+    font-weight:bold;
+}
+
+.navbar-right{
+	margin-right:0.5em;
+}
+.dropdown-menu{
+    padding:0;
+}
+.dropdown-menu>li>a{
+    font-size:0.9em;
+    padding:0.6em 1em;
+}
+.navbar-toggle{
+	background:transparent!important;
+	border:0;
+	margin-top:0;
+}
+.navbar-toggle .icon-bar{
+	background:#333;
+	height:3px;
+	width:35px;
+}
+.navbar-toggle .icon-bar+.icon-bar{
+	margin-top: 6px;
+}
+
+.nav-tabs {
+    border-bottom-width: 0.5px;
+}
+
+.nav-tabs>li>a{
+    border:0;
+    border-bottom:4px solid transparent;
+    border-radius:0;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    background: transparent;
+    border:0;
+    border-bottom:4px solid #e35555;
+    color:#e35555;
+}
+
+.tab-content .tab-pane{
+    padding:1em 0;
+}
+
+.docs-header{
+	padding-top:0;
+}
+.no-data{
+	background:#eee;
+	color:#888;
+	font-size:1.3em;
+	margin-top:2em;
+	padding:1em;
+}
+
+.jumbotron{
+    border-radius:0!important;
+}
+
+/* Home */
+.intro{
+    margin:8% auto;
+    max-width:840px;
+    padding:2em;
+}
+.intro h1{
+    color:#672622;
+    font-size:2.5em;
+    margin-top:0.5em;
+}
+.intro ul{
+    margin:2em 0;
+}
+.intro .logo{
+    max-width:9em;
+    margin-top:2em;
+}
+
+.intro .google-play{
+    max-width:15em;
+}
+
+.bx-wrapper{
+    margin-bottom:0;
+}
+
+.info-section{
+    padding:2em 5em;
+}
+
+.row-box{
+    padding:1em;
+}
+.row-box > div{
+    background:#fff;
+    padding:1em 0;
+}
+.row-box img{
+
+}
+.row-box h4{
+    margin:5px 0;
+}
+
+/* Stats */
+.stat-row{
+    margin-bottom:2em;
+}
+.stat-box > div{
+    background:#eee;
+    margin-bottom:1em;
+    padding:1em 1em 0.34em;
+    text-align:center;
+}
+.stat-box h3{
+    margin-bottom:2px;
+    margin-top:0;
+}
+
+/* Login */
+.login-box{
+	box-shadow:0 2px 5px rgba(0,0,0,0.3);
+    margin:10% auto 0;
+    max-width:900px;
+}
+.login-box > div{
+    min-height:25em;
+	padding:2em;
+}
+.login-banner{
+    background:url(../img/login-banner.jpg) no-repeat;
+    background-size:cover;
+    padding:0;
+}
+.login-form{
+    background:#fff;
+}
+.login-form .form-group{
+    margin-left:0;
+    margin-right:0;
+}
+
+footer{
+    color:#777;
+    margin-top:3em;
+    padding: 8px 0;
+}
+footer p{
+    padding:1em;
+}
+
+@media (min-width: 768px){
+
+    .stat-row{
+        margin-left:-15px;
+    }
+}
+
+@media (max-width: 992px){
+	body{
+		padding-top:0;
+	}
+	.navbar-custom .navbar-brand {
+        width:auto!important;
+        overflow: hidden;
+	}
+}
